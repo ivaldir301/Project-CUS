@@ -1,0 +1,32 @@
+
+.container-grid{
+
+	margin-top: 5%;
+	margin-bottom: 9%;
+	display: grid;
+	justify-content: space-around;
+
+}
+
+.stars input{
+	display: none;
+}
+
+.stars label{
+	transition: all 0.2s ease;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+	color: orange;
+}
+
+input:not(:checked) ~ label:hover{
+	color: orange;
+}
+
+input#rate-5:checked ~ label{
+	color: orange;
+	text-shadow: 0 0 20px #952;
+}
+
