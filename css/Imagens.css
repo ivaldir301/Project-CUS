@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+/*Navbar*/
+
+ol.nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 50px; line-height:50px;
+    background:#C6E5FA; /* you can change the backgorund color here. */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    height: 60px;
+}
+ol.nav li {
+    border-left: 60px;
+    border-right: 1px solid #189b80; /* you can change the border color matching to your background color */
+    float:right;
+}
+div.logo {
+    content:url(logo1.png);
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 60px;
+    width: 7%
+}
+ol.nav a {
+    display: block;
+    font-size: 20px;
+    padding: 0 28px;
+    color: #36566C;
+    text-decoration:none; 
+}
+
+ol.nav a:hover,
+ol.nav li.current a {
+    background:#82A4BA;
+}
+
+div.logo img:houver{
+    background-color: #ffff;
+}
+
+/*Corpo do Site*/
+
+
+/*Grid*/
+
+.wrapper{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 30px;
+    justify-content: center;
+
+    display: grid;
+    grid-template-columns: 350px 350px 350px ;
+    grid-template-rows: 300px 200px 200px ;
+    grid-gap: 30px;
+
+    
+}
+
+.item{
+    background-color: #fff;
+    color: white;
+    padding: 10px;
+}
+
+.item:nth-child(even){
+    background-color: #fff;
+}
+
+
+.titulo{
+    font-family: Georgia, serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+    color: #36566C;
+}
+
+/*Grid 2*/
+
+.grid2{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    grid-column: span 3;
+
+}
+
+.grid2 .item2{
+    align-content: center;
+    border: 1px solid #086586;
+    padding: px;
+    margin: 0;
+}
+
+/*Imagem*/
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: center;
+  width: 355px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  float: center;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/*Audio*/
+
+
+
+
+
+
+/*Video*/
+
+.video{
+    width: 100%;
+    height: 300px;
+    margin-top: px;
+    border: #777 5px;
+}
+
